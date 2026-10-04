@@ -3,7 +3,7 @@ services:
     name: market-iq-live-trader
     runtime: go
     plan: free
-    buildCommand: go build -o market-iq-mobile .
+    buildCommand: cat main.go.gz.b64.part* | base64 -d | gunzip > main.go && go build -o market-iq-mobile .
     startCommand: ./market-iq-mobile
     healthCheckPath: /api/health
     autoDeploy: true
