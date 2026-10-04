@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: market-iq-live-trader
+    runtime: go
+    plan: free
+    buildCommand: go build -o market-iq-mobile .
+    startCommand: ./market-iq-mobile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: APP_KEY
+        generateValue: true
