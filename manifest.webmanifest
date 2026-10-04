@@ -1,0 +1,9 @@
+{
+  "name": "Market IQ Live Trader",
+  "short_name": "Market IQ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07101c",
+  "theme_color": "#07101c",
+  "description": "Mobile Indian F&O market regime, sector and CALL/PUT decision dashboard."
+}
